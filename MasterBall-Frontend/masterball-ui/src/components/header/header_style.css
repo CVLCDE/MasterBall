@@ -1,0 +1,53 @@
+.header{
+    width: 100%;
+    height: 5vh;
+    color: white;
+    /* background-color: #362D5C; */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* border-bottom: 5px solid #A25C7E; */
+}
+
+.header-wrapper {
+    height: 100%;
+    padding: 0 20px;   
+    display: flex; 
+    align-items: center;
+ 
+   justify-content: space-between;
+}
+
+
+
+/* Left Side Style */
+.left-side{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+/* Right Side Style */
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.notifications-icon {
+    margin-right: 5px;
+}
+
+.notifications-icon,
+.user-avatar {
+    cursor: pointer;
+}
+
