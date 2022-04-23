@@ -6,52 +6,47 @@ import './dashboard_style.css';
 
 // Component Imports
 import News from "../../components/news/News";
-import GrailedList from "../../components/grailed_list/GrailedList";
 import CollectionList from "../../components/collection_list/CollectionList";
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
+import { Box } from "@mui/system";
+
 
 function Dashboard() {
 
-    const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    textAlign: 'center',
-    backgroundColor: "#383838",
-    height: 333,
-    lineHeight: '60px',
-    }));
-    
     return (
         <div className="dashboard">
             <div className="dashboard-wrapper">
                 <div className="content-wrapper">
-                    <Grid container rowSpacing={10} columnSpacing={{ xs: 8 }}>
-                        <Grid item xs={6}>
-                            <span className="content-title">Grail'd 👑</span>
-                            <Item elevation={8}>
-                                <GrailedList />
-                            </Item>
+                    <Grid container spacing={2} style={{height: "100%", overflow: "auto"}}>
+                        <Grid item xs={ 12 }>
+                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
                         </Grid>
-                        <Grid item xs={6}>
-                            <span className="content-title">My Collection 📜</span>
-                            <Item elevation={8}>
-                                <CollectionList />
-                            </Item>
+                        <Grid item xs={ 12 }>
+                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
                         </Grid>
-                        <Grid item xs={6}>
-                            <span className="content-title">Decks 🗂️</span>
-                            <Item elevation={8}>
+                        <Grid item xs={ 6 }>
+                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
+                        </Grid>
+                        <Grid item xs={ 6 }>
+                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
+                        </Grid>
 
-                            </Item>
+                        
+                    </Grid>
+                    {/* <Grid container className="grid-wrapper" rowSpacing={10} columnSpacing={{ xs: 4 }} >
+                        <Grid item xs={12}>
+                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={ false } />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <CollectionList title="My Collection 📜" ownedCards={false} grailedCards={ false } />
                         </Grid>
                         <Grid item xs={6}>
-                            <span className="content-title">Selling 📈</span>
-                            <Item elevation={8}>
-                                
-                            </Item>              
+                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={ false } />
                         </Grid>
-                    </Grid>
+                        <Grid item xs={6}>
+                            <CollectionList title="My Collection 📜" ownedCards={false} grailedCards={ false } />
+                        </Grid>
+                    </Grid> */}
                 </div>
                 <News />
             </div>

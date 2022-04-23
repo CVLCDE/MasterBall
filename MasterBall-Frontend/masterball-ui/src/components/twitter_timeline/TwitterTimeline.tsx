@@ -13,8 +13,8 @@ interface TwitterData{
 function TwitterTimeline(props: TwitterData) {
   return (
     <TwitterTimelineEmbed
-    sourceType="profile"
-    screenName={ props.twitterHandle }
+      sourceType="profile"
+      screenName={ props.twitterHandle }
       autoHeight={true}
       noFooter={true}
       noScrollbar={true}

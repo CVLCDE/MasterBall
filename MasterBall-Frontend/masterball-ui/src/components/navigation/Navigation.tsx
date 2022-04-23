@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 
 // Style Imports
 import './navigation_style.css'
+import Colors from '../../assets/Colors'
 
 // Component Imports
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import Tooltip from '@mui/material/Tooltip';
 import { CustomTooltip } from './CustomTooltip';
 
 // Icon Imports
@@ -23,7 +23,7 @@ import NewspaperIcon from '@mui/icons-material/Newspaper';
 function Navigation() {
 
   return (
-    <div className='navigation'>
+    <div className='navigation' style={{background: Colors.dark_pink_gradient }}>
       <div className="navigation-wrapper">
         <List>
           <ListItem>
@@ -33,7 +33,6 @@ function Navigation() {
                 </ListItemButton>
               </CustomTooltip>
             </ListItem>
-
 
           <ListItem>
             <CustomTooltip title="Sets" placement="right">

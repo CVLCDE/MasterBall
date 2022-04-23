@@ -10,11 +10,59 @@
 
 .content-wrapper {
     width: 90%;
+    height: 100%;
     padding: 0 50px;
+}
+
+.grid-wrapper {
+    height: 100%;
+    overflow: auto;
 }
 
 .content-title {
     color: white;
     font-size: 34px;
     text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e36769;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e49a9a;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #e36769;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e2e;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #1e1e2e;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #1b2224;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
 }

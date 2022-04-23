@@ -9,9 +9,7 @@ const Colors = {
     ///////////////
     // Gradients
     ///////////////
-    dark_pink_gradient: 'linear-gradient(90deg, hsla(240, 21%, 15%, 1) 0%, hsla(290, 34%, 25%, 1) 25%, hsla(302, 40%, 35%, 1) 50%, hsla(307, 45%, 47%, 1) 75%, hsla(309, 70%, 59%, 1) 100%);',
-    dark_pink_gradient_moz: '-moz-linear-gradient(90deg, hsla(240, 21%, 15%, 1) 0%, hsla(290, 34%, 25%, 1) 25%, hsla(302, 40%, 35%, 1) 50%, hsla(307, 45%, 47%, 1) 75%, hsla(309, 70%, 59%, 1) 100%);',
-    dark_pink_gradient_webkit: '-webkit-linear-gradient(90deg, hsla(240, 21%, 15%, 1) 0%, hsla(290, 34%, 25%, 1) 25%, hsla(302, 40%, 35%, 1) 50%, hsla(307, 45%, 47%, 1) 75%, hsla(309, 70%, 59%, 1) 100%);',
+    dark_pink_gradient: "linear-gradient(#e66465, #9198e5)",
 
     ///////////////
     // Solid Color

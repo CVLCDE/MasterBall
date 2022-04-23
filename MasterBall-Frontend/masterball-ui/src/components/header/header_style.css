@@ -11,13 +11,12 @@
 
 .header-wrapper {
     height: 100%;
-    padding: 10px 35px;   
+    padding: 5px 35px 10px 35px;   
     display: flex; 
     align-items: center;
  
    justify-content: space-between;
 }
-
 
 
 /* Left Side Style */

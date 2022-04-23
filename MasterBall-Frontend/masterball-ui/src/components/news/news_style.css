@@ -1,7 +1,7 @@
 .news-wrapper {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    border-radius: 5px;
 }
 
 .news-section-title {
@@ -11,31 +11,10 @@
 }
 
 .news-section-twitter {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
     padding: 10px;
-    background-image: linear-gradient(180deg,
-            hsl(331, 28%, 50%) 0%,
-            hsl(329deg 28% 50%) 8%,
-            hsl(327deg 28% 50%) 17%,
-            hsl(324deg 28% 50%) 25%,
-            hsl(322deg 28% 50%) 33%,
-            hsl(319deg 28% 50%) 42%,
-            hsl(317deg 28% 50%) 50%,
-            hsl(314deg 28% 49%) 58%,
-            hsl(310deg 28% 49%) 67%,
-            hsl(307deg 28% 49%) 75%,
-            hsl(303deg 27% 49%) 83%,
-            hsl(299deg 27% 49%) 92%,
-            hsl(295deg 28% 50%) 100%);
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
-        rgba(0, 0, 0, 0.07) 0px 2px 2px,
-        rgba(0, 0, 0, 0.07) 0px 4px 4px,
-        rgba(0, 0, 0, 0.07) 0px 8px 8px,
-        rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .twitter-timeline-container {

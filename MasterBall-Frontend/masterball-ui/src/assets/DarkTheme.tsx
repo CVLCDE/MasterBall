@@ -4,24 +4,37 @@ import Colors from './Colors';
 const DarkTheme = createTheme({
     palette: {
         primary: {
-            main: Colors.dark_body_background
+            main: Colors.dark_body_background,
         },
         secondary: {
-            main: "#ab47bc"
+            main: Colors.purple
         },
         error: {
-            main: "#f57c00"
+            main: Colors.red
         },
         warning: {
-            main: "#f57c00"
+            main: Colors.orange
         },
         info: {
-            main: "#0288d1"
+            main: Colors.blue
         },
         success: {
-            main: "#388e3c"
+            main: Colors.green
+        }
+    },
+    components: {
+        MuiPaper: {
+            styleOverrides: {
+                root: {
+                textAlign: 'center',
+                backgroundColor: "#383838",
+                height: 333,
+                lineHeight: '60px',
+                }
+            }
         }
     }
+
 
 })
 
