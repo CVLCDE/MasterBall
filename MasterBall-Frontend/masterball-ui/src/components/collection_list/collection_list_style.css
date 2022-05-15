@@ -1,0 +1,24 @@
+.collection-list {
+    height: 100%;
+}
+
+.collection-list-title {
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+.collection-list-content{
+    display: flex;
+    padding: 1%;
+}
+
+.collection-list-selected-card-container{
+    
+}
+
+.collection-list-db-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

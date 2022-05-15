@@ -10,13 +10,11 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import { CustomTooltip } from './CustomTooltip';
+import { Link } from "react-router-dom";
 
 // Icon Imports
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import CollectionsIcon from '@mui/icons-material/Collections';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import StorefrontIcon from '@mui/icons-material/Storefront';
-import NewspaperIcon from '@mui/icons-material/Newspaper';
 
 
 
@@ -28,44 +26,23 @@ function Navigation() {
         <List>
           <ListItem>
             <CustomTooltip title="Dashboard" placement="right">
-                <ListItemButton>
-                    <DashboardIcon sx={{ fontSize: 50 }} />
-                </ListItemButton>
+              <Link to="/"> 
+                  <ListItemButton>
+                      <DashboardIcon sx={{ fontSize: 50, color: '#F5F8FA' }} />
+                  </ListItemButton>
+                </Link>
               </CustomTooltip>
             </ListItem>
 
           <ListItem>
             <CustomTooltip title="Sets" placement="right">
+              <Link to="/set-viewer"> 
                 <ListItemButton>
-                    <CollectionsIcon sx={{ fontSize: 50 }}/>
+                    <CollectionsIcon sx={{ fontSize: 50, color: '#F5F8FA' }}/>
                 </ListItemButton>
-              </CustomTooltip>
-            </ListItem>
-          
-          <ListItem>
-              <CustomTooltip title="Deck Builder" placement="right">
-                <ListItemButton>
-                    <ConstructionIcon sx={{ fontSize: 50 }}/>
-                </ListItemButton>
-              </CustomTooltip>
-            </ListItem>
-
-          <ListItem>
-              <CustomTooltip title="Market" placement="right">
-                <ListItemButton>
-                    <StorefrontIcon sx={{ fontSize: 50 }}/>
-                </ListItemButton>
-              </CustomTooltip>
-            </ListItem>
-
-          <ListItem>
-            <CustomTooltip title="News" placement="right">
-              <ListItemButton>
-                  <NewspaperIcon sx={{ fontSize: 50 }}/>
-              </ListItemButton>
+              </Link>
             </CustomTooltip>
           </ListItem>
-          
           </List>
         </div>
     </div>

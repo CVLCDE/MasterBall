@@ -22,33 +22,17 @@ function Dashboard() {
                             <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
                         </Grid>
                         <Grid item xs={ 12 }>
-                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
+                            <CollectionList title="Owned 📜" ownedCards={false} grailedCards={false} />
+                        </Grid>
+                        {/* <Grid item xs={ 6 }>
+                            <CollectionList title="Coming Soon" ownedCards={false} grailedCards={false} />
                         </Grid>
                         <Grid item xs={ 6 }>
-                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
-                        </Grid>
-                        <Grid item xs={ 6 }>
-                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={false} />
-                        </Grid>
-
-                        
+                            <CollectionList title="Coming Soon" ownedCards={false} grailedCards={false} />
+                        </Grid> */}
                     </Grid>
-                    {/* <Grid container className="grid-wrapper" rowSpacing={10} columnSpacing={{ xs: 4 }} >
-                        <Grid item xs={12}>
-                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={ false } />
-                        </Grid>
-                        <Grid item xs={12}>
-                            <CollectionList title="My Collection 📜" ownedCards={false} grailedCards={ false } />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <CollectionList title="Grail'd 👑" ownedCards={false} grailedCards={ false } />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <CollectionList title="My Collection 📜" ownedCards={false} grailedCards={ false } />
-                        </Grid>
-                    </Grid> */}
                 </div>
-                <News />
+                
             </div>
         </div>
     )

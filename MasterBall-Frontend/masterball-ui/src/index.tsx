@@ -5,8 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Link
+  Routes
 } from "react-router-dom";
 
 // Style Imports
@@ -17,6 +16,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import SetViewer from './pages/set_viewer/SetViewer';
 import Navigation from './components/navigation/Navigation';
 import Header from './components/header/Header';
+import News from "./components/news/News";
 
 // Theme Imports
 import DarkTheme from './assets/DarkTheme';
@@ -35,6 +35,7 @@ root.render(
             <Route path="/" element={<Dashboard />} />
             <Route path="/set-viewer" element={<SetViewer />} />
           </Routes>
+          <News />
           </div>
         </ThemeProvider>
     </Router>

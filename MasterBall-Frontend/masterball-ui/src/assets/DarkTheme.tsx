@@ -32,6 +32,13 @@ const DarkTheme = createTheme({
                 lineHeight: '60px',
                 }
             }
+        },
+        MuiTextField: {
+            defaultProps: {
+                color: "success",
+
+            }
+
         }
     }
 
